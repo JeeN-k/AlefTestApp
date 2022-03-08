@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		1F889C3827D677E40044D966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C3727D677E40044D966 /* AppDelegate.swift */; };
 		1F889C3A27D677E40044D966 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C3927D677E40044D966 /* SceneDelegate.swift */; };
-		1F889C3C27D677E40044D966 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C3B27D677E40044D966 /* ViewController.swift */; };
-		1F889C3F27D677E40044D966 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F889C3D27D677E40044D966 /* Main.storyboard */; };
+		1F889C3C27D677E40044D966 /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C3B27D677E40044D966 /* PersonalDataViewController.swift */; };
 		1F889C4127D677E80044D966 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F889C4027D677E80044D966 /* Assets.xcassets */; };
 		1F889C4427D677E80044D966 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F889C4227D677E80044D966 /* LaunchScreen.storyboard */; };
+		1F889C4C27D67A810044D966 /* ChildCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C4B27D67A810044D966 /* ChildCellView.swift */; };
+		1F889C4E27D67B430044D966 /* PersonalDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C4D27D67B430044D966 /* PersonalDataViewModel.swift */; };
+		1F889C5027D67B600044D966 /* PersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C4F27D67B600044D966 /* PersonalData.swift */; };
+		1F889C5227D67D650044D966 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C5127D67D650044D966 /* TitleView.swift */; };
+		1F889C5427D68CB20044D966 /* ChildCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C5327D68CB20044D966 /* ChildCellViewModel.swift */; };
+		1F889C5A27D7BBF00044D966 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F889C5927D7BBF00044D966 /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F889C3427D677E40044D966 /* AlefTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlefTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F889C3727D677E40044D966 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F889C3927D677E40044D966 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F889C3B27D677E40044D966 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1F889C3E27D677E40044D966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F889C3B27D677E40044D966 /* PersonalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
 		1F889C4027D677E80044D966 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F889C4327D677E80044D966 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F889C4527D677E80044D966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F889C4B27D67A810044D966 /* ChildCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCellView.swift; sourceTree = "<group>"; };
+		1F889C4D27D67B430044D966 /* PersonalDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewModel.swift; sourceTree = "<group>"; };
+		1F889C4F27D67B600044D966 /* PersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalData.swift; sourceTree = "<group>"; };
+		1F889C5127D67D650044D966 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		1F889C5327D68CB20044D966 /* ChildCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCellViewModel.swift; sourceTree = "<group>"; };
+		1F889C5927D7BBF00044D966 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		1F889C3627D677E40044D966 /* AlefTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				1F889C5527D68CD50044D966 /* MVVM */,
 				1F889C3727D677E40044D966 /* AppDelegate.swift */,
 				1F889C3927D677E40044D966 /* SceneDelegate.swift */,
-				1F889C3B27D677E40044D966 /* ViewController.swift */,
-				1F889C3D27D677E40044D966 /* Main.storyboard */,
 				1F889C4027D677E80044D966 /* Assets.xcassets */,
 				1F889C4227D677E80044D966 /* LaunchScreen.storyboard */,
 				1F889C4527D677E80044D966 /* Info.plist */,
 			);
 			path = AlefTestApp;
+			sourceTree = "<group>";
+		};
+		1F889C5527D68CD50044D966 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				1F889C5827D68CEA0044D966 /* Model */,
+				1F889C5727D68CE40044D966 /* View */,
+				1F889C5627D68CDD0044D966 /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		1F889C5627D68CDD0044D966 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F889C5327D68CB20044D966 /* ChildCellViewModel.swift */,
+				1F889C4D27D67B430044D966 /* PersonalDataViewModel.swift */,
+				1F889C5927D7BBF00044D966 /* Observer.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F889C5727D68CE40044D966 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F889C5127D67D650044D966 /* TitleView.swift */,
+				1F889C4B27D67A810044D966 /* ChildCellView.swift */,
+				1F889C3B27D677E40044D966 /* PersonalDataViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F889C5827D68CEA0044D966 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F889C4F27D67B600044D966 /* PersonalData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +174,6 @@
 			files = (
 				1F889C4427D677E80044D966 /* LaunchScreen.storyboard in Resources */,
 				1F889C4127D677E80044D966 /* Assets.xcassets in Resources */,
-				1F889C3F27D677E40044D966 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +184,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F889C3C27D677E40044D966 /* ViewController.swift in Sources */,
+				1F889C3C27D677E40044D966 /* PersonalDataViewController.swift in Sources */,
+				1F889C5A27D7BBF00044D966 /* Observer.swift in Sources */,
+				1F889C4C27D67A810044D966 /* ChildCellView.swift in Sources */,
+				1F889C4E27D67B430044D966 /* PersonalDataViewModel.swift in Sources */,
+				1F889C5427D68CB20044D966 /* ChildCellViewModel.swift in Sources */,
+				1F889C5227D67D650044D966 /* TitleView.swift in Sources */,
 				1F889C3827D677E40044D966 /* AppDelegate.swift in Sources */,
 				1F889C3A27D677E40044D966 /* SceneDelegate.swift in Sources */,
+				1F889C5027D67B600044D966 /* PersonalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1F889C3D27D677E40044D966 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F889C3E27D677E40044D966 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1F889C4227D677E80044D966 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +338,6 @@
 				INFOPLIST_FILE = AlefTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +365,6 @@
 				INFOPLIST_FILE = AlefTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
